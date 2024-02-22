@@ -1,5 +1,5 @@
 /*
- * File: 6-print_numbers.c
+ * File: 6-print_numberz.c
  * Auth: Nigar
  */
 
