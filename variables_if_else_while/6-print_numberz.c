@@ -1,6 +1,6 @@
 /*
- * File: 5-print_numbers.c
- * Auth: Zabita
+ * File: 6-print_numbers.c
+ * Auth: Nigar
  */
 
 #include <stdio.h>
@@ -14,7 +14,7 @@ int main(void)
 {
 	int n;
 
-	for(n = 0; n<10; n++)
+	for(n = 0; n < 10; n++)
 		putchar(n + '0');
 
 	putchar('\n');
