@@ -12,6 +12,7 @@ int main(void)
 
 	for (a = 0; a < 10; a++)
 		putchar (a + '0');
+
 	for (c = 'a'; c <= 'f'; c++)
 		putchar (c);
 	
