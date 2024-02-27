@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_must_numbers - print numbers other 2 and 4.
+ * print_most_numbers - print number 0 to 9
  *
  * Return: void.
  */
@@ -14,4 +14,5 @@ void print_most_numbers(void)
 		if (i != 2 && i != 4)
 			_putchar (i + '0');
 	}
+	_putchar('\n');
 }
