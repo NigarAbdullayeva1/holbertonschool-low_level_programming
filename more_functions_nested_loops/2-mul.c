@@ -3,9 +3,10 @@
 
 /**
  * mul - multiple digits
- * @c: digits
+ * @a: digits
+ * @b: digits
  *
- * return: sum of digits
+ * Return: multiplication.
  */
 int mul(int a, int b)
 {
