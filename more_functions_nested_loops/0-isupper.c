@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 /**
- * _isupper - check letters.
+ * _isupper - check if upper.
  * @c: charecter
  *
- * Return 1 or 0
+ * Return: 1 or 0.
  */
 int _isupper(int c)
 {
