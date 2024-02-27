@@ -4,6 +4,7 @@
 
 /**
  * _isdigit - check if digit.
+ *@c:charecter
  *
  * Return: 0 or 1.
  */
