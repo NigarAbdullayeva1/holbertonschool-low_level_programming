@@ -1,10 +1,9 @@
 #include "main.h"
-
 /**
- * swp_int -  function that swaps the values of two integers.
- * @a: pointer
- * @b: pointer
- * return: void/
+ * swap_int - a function that swaps two number
+ * @a: input
+ * @b: input
+ * Return: 0
  */
 void swap_int(int *a, int *b)
 {
