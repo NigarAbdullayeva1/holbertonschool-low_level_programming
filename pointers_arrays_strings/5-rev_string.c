@@ -1,14 +1,11 @@
 #include "main.h"
 #include <string.h>
-#include <stdio.h>
-
 /**
  * print_rev - a function that prints a string, in reverse
  *@s: string
  * strlen - counts length of string
  * Return: nothing
  */
-
 void rev_string(char *s)
 {
 	int i = 0, j = 0;
