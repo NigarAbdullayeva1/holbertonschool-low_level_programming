@@ -9,8 +9,13 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int a = 0, n = strlen(dest);
+	int a = 0, i = 0, n;
 
+	while (*(dest + a) != 0)
+	{
+		i++;
+	}
+	n = i--;
 	do {
 		*(dest + n + a) = *(src + a);
 		a++;
