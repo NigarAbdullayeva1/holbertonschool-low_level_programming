@@ -1,20 +1,18 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * reverse_array - reverse given array
- * @a: array
- * @n: the number of elements of the array
+ * main - check the code
+ *
+ * Return: Always 0.
  */
-
-void reverse_array(int *a, int n)
+int main(void)
 {
-	int i;
+    char *s = "hello, world";
+    char *f = "world";
+    char *t;
 
-	for (i = 0; i < n / 2; i++)
-	{
-		int temp = a[i];
-
-		a[i] = a[n - i - 1];
-		a[n - i - 1] = temp;
-	}
+    t = _strpbrk(s, f);
+    printf("%s\n", t);
+    return (0);
 }
