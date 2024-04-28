@@ -1,49 +1,41 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 #include "lists.h"
-
 /**
- * add_node_end - adds a new node at the end of a list_t list
- * @head: pointer to pointer that point head)
+ * add_node_end - a function that adds a new node at the end of a list_t list.
+ * @head: header node of singly linked list
  * @str: string
- * Return: the address of the new element, or NULL if it failed
+ * Return: address of the new element
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	listPtr newNode;
+	int lens = 0;
+	list_t *new_node;
+	list_t *temp;
 
-	if (!head || !str)
+	for (lens = 0; str[lens] != '\0'; lens++)
+		;
+	new_node = malloc(sizeof(list_t));
+	if (new_node == NULL)
 		return (NULL);
-
-	newNode = malloc(sizeof(list_t));
-	if (!newNode)
-		return (NULL);
-
-	newNode->str = strdup(str);
-	if (!newNode->str)
+	new_node->str = strdup(str);
+	if (new_node->str == NULL)
 	{
-		free(newNode);
+		free(new_node);
 		return (NULL);
 	}
-
-	newNode->len = strlen(newNode->str);
-	newNode->next = NULL;
-
-	if (*head)
-		lastNode(*head)->next = newNode;
-	else
-		*head = newNode;
-
-	return (newNode);
-}
-
-
-/**
- * lastNode - Find last node
- * @head: pointer to type
- * Return: pointer to last node
- */
-listPtr lastNode(listPtr head)
-{
-	if (!head->next)
-		return (head);
-	return (lastNode(head->next));
+	new_node->len = lens;
+	if (*head == NULL)
+	{
+		*head = new_node;
+	}
+	temp = *head;
+	while (temp->next != NULL)
+	{
+		temp = temp->next;
+	}
+	temp->next = new_node;
+	new_node->next = NULL;
+	return (new_node);
 }
