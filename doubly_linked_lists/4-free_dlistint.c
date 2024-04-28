@@ -16,4 +16,5 @@ void free_dlistint(dlistint_t *head)
 		new_node = (*current).next;
 		free(current);
 		current = new_node;
-
+	}
+}
